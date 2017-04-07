@@ -7,6 +7,9 @@ void In(parallelepiped &p, ifstream &ifst);
 void Out(sphere &s, ofstream &ofst);
 void Out(parallelepiped &p, ofstream &ofst);
 
+double Volume(parallelepiped &p);
+double Volume(sphere &s);
+
 shape* In(ifstream &ifst) {
 	shape *sh;
 	sphere* sp;
@@ -41,14 +44,25 @@ void Out(shape *s, ofstream &ofst) {
 	switch (s->t) {
 	case SPHERE:
 		Out(*((sphere*)s), ofst);
-		ofst << ", Destiny = " << ((sphere*)s)->destiny << endl;
+		ofst << ", Destiny = " << ((sphere*)s)->destiny;
 		break;
 	case PARALLELEPIPED:
 		Out(*((parallelepiped*)s), ofst);
-		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny << endl;
+		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny;
 		break;
 	default:
 		ofst << "Incorrect shape!" << endl;
 	}
 
+}
+
+double Volume(shape *s) {
+	switch (s->t) {
+	case SPHERE:
+		return Volume(*(sphere*)s);
+	case PARALLELEPIPED:
+		return Volume(*(parallelepiped*)s);
+	default:
+		return -1;
+	}
 }
