@@ -5,4 +5,6 @@
 struct shape {
 	type t;
 	double destiny;
+
+	int temp;
 };

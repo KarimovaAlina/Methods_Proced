@@ -6,5 +6,7 @@ struct sphere {
 	type t;
 	double destiny;
 
+	int temp;
+
 	int rad;
 };
