@@ -61,3 +61,25 @@ void ClearContainer(container &c) {
 	c.n = 0;
 	c.cont = NULL;
 }
+
+void OutSpheres(container &c, ofstream &ofst) {
+	ofst << "Only spheres:" << endl;
+
+	list* cur = c.cont;
+	int s = 0;
+	while (cur != NULL && s < c.n)
+	{
+		
+		if (cur->shape->t == SPHERE)
+		{
+			ofst << s + 1 << " :  ";
+			Out(cur->shape, ofst);
+			ofst << endl;
+			++s;
+		}
+		
+
+		cur = cur->next;
+		
+	}
+}

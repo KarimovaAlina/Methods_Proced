@@ -41,11 +41,11 @@ void Out(shape *s, ofstream &ofst) {
 	switch (s->t) {
 	case SPHERE:
 		Out(*((sphere*)s), ofst);
-		ofst << ", Destiny = " << ((sphere*)s)->destiny << endl;
+		ofst << ", Destiny = " << ((sphere*)s)->destiny;
 		break;
 	case PARALLELEPIPED:
 		Out(*((parallelepiped*)s), ofst);
-		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny << endl;
+		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny;
 		break;
 	default:
 		ofst << "Incorrect shape!" << endl;
