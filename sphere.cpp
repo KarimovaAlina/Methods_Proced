@@ -10,7 +10,7 @@ void Out(sphere &s, ofstream &ofst) {
 	
 }
 
-double Volume(sphere &s)
+double Volume(sphere *s)
 {
-	return (s.rad * s.rad *s.rad * 3.1415 * 4 / 3);
+	return (s->rad * s->rad *s->rad * 3.1415 * 4 / 3);
 }

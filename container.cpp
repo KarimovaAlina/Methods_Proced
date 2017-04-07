@@ -1,9 +1,12 @@
 #include "main.h"
 
+
 void Out(shape *s, ofstream &ofst);
 shape* In(ifstream &ifst);
 
 double Volume(shape *s);
+
+bool Compare(shape *first, shape *second);
 
 void Out(container &c, ofstream &ofst) {
 	ofst << "Container contains " << c.n << " elements." << endl;
@@ -63,5 +66,19 @@ void ClearContainer(container &c) {
 	}
 	c.n = 0;
 	c.cont = NULL;
+}
+
+void Sort(container &c) {
+	for (int i = 0; i < c.n - 1; i++) {
+		list* cur = c.cont;
+		for (int j = i + 1; j < c.n; j++) {
+			if (Compare(cur->shape, cur->next->shape)) {
+				shape *tmp = cur->shape;
+				cur->shape = cur->next->shape;
+				cur->next->shape = tmp;
+			}
+			cur = cur->next;
+		}
+	}
 }
 
