@@ -3,6 +3,8 @@
 void Out(shape *s, ofstream &ofst);
 shape* In(ifstream &ifst);
 
+double Volume(shape *s);
+
 void Out(container &c, ofstream &ofst) {
 	ofst << "Container contains " << c.n << " elements." << endl;
 	list* cur = c.cont;
@@ -11,6 +13,7 @@ void Out(container &c, ofstream &ofst) {
 	{
 		ofst << s + 1 << " :  ";
 		Out(cur->shape, ofst);
+		ofst << ", Volume = " << Volume(cur->shape);
 		ofst << endl;
 		cur = cur->next;
 		++s;
@@ -61,3 +64,4 @@ void ClearContainer(container &c) {
 	c.n = 0;
 	c.cont = NULL;
 }
+
