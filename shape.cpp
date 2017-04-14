@@ -45,11 +45,13 @@ void Out(shape *s, ofstream &ofst) {
 	case SPHERE:
 		Out(*((sphere*)s), ofst);
 
+
 		ofst << ", Destiny = " << ((sphere*)s)->destiny << ", Melting temperature = " << ((sphere*)s)->temp;
 		break;
 	case PARALLELEPIPED:
 		Out(*((parallelepiped*)s), ofst);
 		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny << ", Melting temperature = " << ((parallelepiped*)s)->temp;
+
 
 		break;
 	default:

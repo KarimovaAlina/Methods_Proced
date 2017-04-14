@@ -14,6 +14,7 @@ void main(int arc, char* argv[]) {
 	fout << "Filled container. " << endl;
 	Sort(c);
 	Out(c, fout);
+	OutSpheres(c, fout);
 	ClearContainer(c);
 	fout << "Empty container. " << endl;
 	Out(c, fout);

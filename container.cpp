@@ -68,6 +68,7 @@ void ClearContainer(container &c) {
 	c.cont = NULL;
 }
 
+
 void Sort(container &c) {
 	for (int i = 0; i < c.n - 1; i++) {
 		list* cur = c.cont;
@@ -79,6 +80,28 @@ void Sort(container &c) {
 			}
 			cur = cur->next;
 		}
+	}
+}
+
+void OutSpheres(container &c, ofstream &ofst) {
+	ofst << "Only spheres:" << endl;
+
+	list* cur = c.cont;
+	int s = 0;
+	while (cur != NULL && s < c.n)
+	{
+		
+		if (cur->shape->t == SPHERE)
+		{
+			ofst << s + 1 << " :  ";
+			Out(cur->shape, ofst);
+			ofst << endl;
+			++s;
+		}
+		
+
+		cur = cur->next;
+		
 	}
 }
 
