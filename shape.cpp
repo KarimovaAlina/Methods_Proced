@@ -7,8 +7,8 @@ void In(parallelepiped &p, ifstream &ifst);
 void Out(sphere &s, ofstream &ofst);
 void Out(parallelepiped &p, ofstream &ofst);
 
-double Volume(parallelepiped &p);
-double Volume(sphere &s);
+double Volume(parallelepiped *p);
+double Volume(sphere *s);
 
 shape* In(ifstream &ifst) {
 	shape *sh;
@@ -59,9 +59,9 @@ void Out(shape *s, ofstream &ofst) {
 double Volume(shape *s) {
 	switch (s->t) {
 	case SPHERE:
-		return Volume(*(sphere*)s);
+		return Volume(((sphere*)s));
 	case PARALLELEPIPED:
-		return Volume(*(parallelepiped*)s);
+		return Volume(((parallelepiped*)s));
 	default:
 		return -1;
 	}
