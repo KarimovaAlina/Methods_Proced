@@ -22,7 +22,7 @@ shape* In(ifstream &ifst) {
 		sp = new sphere;
 		sp->t = SPHERE;
 		In(*sp, ifst);
-		ifst >> sp->destiny;
+		ifst >> sp->destiny >> sp->temp;
 		sh = (shape*)sp;
 		return sh;
 		break;
@@ -30,7 +30,7 @@ shape* In(ifstream &ifst) {
 		p = new parallelepiped;
 		p->t = PARALLELEPIPED;
 		In(*p, ifst);
-		ifst >> p->destiny;
+		ifst >> p->destiny >> p->temp;
 		sh = (shape*)p;
 		return sh;
 		break;
@@ -44,11 +44,13 @@ void Out(shape *s, ofstream &ofst) {
 	switch (s->t) {
 	case SPHERE:
 		Out(*((sphere*)s), ofst);
-		ofst << ", Destiny = " << ((sphere*)s)->destiny;
+
+		ofst << ", Destiny = " << ((sphere*)s)->destiny << ", Melting temperature = " << ((sphere*)s)->temp;
 		break;
 	case PARALLELEPIPED:
 		Out(*((parallelepiped*)s), ofst);
-		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny;
+		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny << ", Melting temperature = " << ((parallelepiped*)s)->temp;
+
 		break;
 	default:
 		ofst << "Incorrect shape!" << endl;

@@ -6,4 +6,5 @@
 struct container {
 	int n;
 	list* cont;
+	
 };
