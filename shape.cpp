@@ -7,13 +7,20 @@ void In(parallelepiped &p, ifstream &ifst);
 void Out(sphere &s, ofstream &ofst);
 void Out(parallelepiped &p, ofstream &ofst);
 
+
 double Volume(parallelepiped *p);
 double Volume(sphere *s);
+
+//New:
+void Out(tetrahedron &t, ofstream &ofst);
+void In(tetrahedron &t, ifstream &ifst);
+
 
 shape* In(ifstream &ifst) {
 	shape *sh;
 	sphere* sp;
 	parallelepiped* p;
+	tetrahedron* t;
 	int type;
 	ifst >> type;
 	switch (type)
@@ -32,6 +39,14 @@ shape* In(ifstream &ifst) {
 		In(*p, ifst);
 		ifst >> p->destiny >> p->temp;
 		sh = (shape*)p;
+		return sh;
+		break;
+	case 2:
+		t = new tetrahedron;
+		t->t = TETRAHEDRON;
+		In(*t, ifst);
+		ifst >> t->destiny;
+		sh = (shape*)t;
 		return sh;
 		break;
 	default:
@@ -53,6 +68,10 @@ void Out(shape *s, ofstream &ofst) {
 		ofst << ", Destiny = " << ((parallelepiped*)s)->destiny << ", Melting temperature = " << ((parallelepiped*)s)->temp;
 
 
+		break;
+	case TETRAHEDRON:
+		Out(*((tetrahedron*)s), ofst);
+		ofst << ", Destiny = " << ((tetrahedron*)s)->destiny << endl;
 		break;
 	default:
 		ofst << "Incorrect shape!" << endl;

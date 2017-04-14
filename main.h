@@ -6,6 +6,7 @@
 #include "container_atd.h"
 #include "shape_type.h"
 #include "list.h"
+#include "tetrahedron_atd.h"
 
 #include <stdio.h>
 #include <iostream>

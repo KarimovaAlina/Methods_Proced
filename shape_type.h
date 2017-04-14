@@ -1,3 +1,3 @@
 #pragma once
 
-enum type{PARALLELEPIPED, SPHERE};
+enum type{PARALLELEPIPED, SPHERE, TETRAHEDRON};
