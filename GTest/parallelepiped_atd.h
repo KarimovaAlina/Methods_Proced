@@ -2,12 +2,11 @@
 
 #include "shape_type.h"
 
-
-struct tetrahedron {
+struct parallelepiped {
 	type t;
 	double destiny;
-	
+
 	int temp;
 
-	int side;
+	int e1, e2, e3;
 };

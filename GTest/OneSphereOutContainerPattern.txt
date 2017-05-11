@@ -1,0 +1,2 @@
+Container contains 1 elements.
+1 :  It is sphere: radius = 25, Destiny = 10.5, Melting temperature = 25, Volume = 65447.9

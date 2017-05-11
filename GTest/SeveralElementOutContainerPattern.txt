@@ -1,0 +1,7 @@
+Container contains 6 elements.
+1 :  It is tetrahedron: side = 9, Destiny = 98, Melting temperature = 354, Volume = 85.9135
+2 :  It is sphere: radius = 10, Destiny = 100, Melting temperature = 500, Volume = 4188.67
+3 :  It is tetrahedron: side = 15, Destiny = 150, Melting temperature = 1000, Volume = 397.748
+4 :  It is parallelepiped:  a = 1, b = 10, c = 100, Destiny = 300, Melting temperature = 1500, Volume = 1000
+5 :  It is sphere: radius = 25, Destiny = 250, Melting temperature = 3000, Volume = 65447.9
+6 :  It is parallelepiped:  a = 2, b = 20, c = 200, Destiny = 600, Melting temperature = 5000, Volume = 8000

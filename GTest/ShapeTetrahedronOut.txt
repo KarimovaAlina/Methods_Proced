@@ -1,0 +1,1 @@
+It is tetrahedron: side = 7, Destiny = 50, Melting temperature = 6500

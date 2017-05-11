@@ -1,0 +1,3 @@
+Only spheres:
+1 :  It is sphere: radius = 10, Destiny = 100, Melting temperature = 500
+2 :  It is sphere: radius = 25, Destiny = 250, Melting temperature = 3000

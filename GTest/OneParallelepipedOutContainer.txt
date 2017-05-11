@@ -1,0 +1,2 @@
+Container contains 1 elements.
+1 :  It is parallelepiped:  a = 25, b = 25, c = 25, Destiny = 15.5, Melting temperature = 30, Volume = 15625

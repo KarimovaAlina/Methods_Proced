@@ -1,0 +1,1 @@
+It is sphere: radius = 5, Destiny = 20, Melting temperature = 700

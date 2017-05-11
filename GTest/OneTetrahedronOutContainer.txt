@@ -1,0 +1,2 @@
+Container contains 1 elements.
+1 :  It is tetrahedron: side = 35, Destiny = 15.5, Melting temperature = 30, Volume = 5052.87

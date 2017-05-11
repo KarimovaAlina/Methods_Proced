@@ -1,0 +1,1 @@
+It is tetrahedron: side = 4
