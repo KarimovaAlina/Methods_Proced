@@ -2,7 +2,8 @@
 
 #include "shape_type.h"
 
-struct sphere {
+struct sphere 
+{
 	type t;
 	double destiny;
 
