@@ -8,7 +8,8 @@ double Volume(shape *s);
 
 bool Compare(shape *first, shape *second);
 
-void Out(container &c, ofstream &ofst) {
+void Out(container &c, ofstream &ofst) 
+{
 	ofst << "Container contains " << c.n << " elements." << endl;
 	list* cur = c.cont;
 	int s = 0;
@@ -21,11 +22,11 @@ void Out(container &c, ofstream &ofst) {
 		cur = cur->next;
 		++s;
 	}
-
 }
 
 
-void In(container &c, ifstream &ifst) {
+void In(container &c, ifstream &ifst) 
+{
 	list* cur = c.cont;
 	if (c.cont == NULL)
 	{
@@ -42,7 +43,6 @@ void In(container &c, ifstream &ifst) {
 	list* prev = cur;
 	while (!ifst.eof())
 	{
-
 		if ((cur->shape = In(ifst)) != 0)
 		{
 			++c.n;
@@ -55,7 +55,8 @@ void In(container &c, ifstream &ifst) {
 }
 
 
-void ClearContainer(container &c) {
+void ClearContainer(container &c) 
+{
 	list* a;
 	while (c.cont != NULL && c.n > 0)
 	{
@@ -69,11 +70,15 @@ void ClearContainer(container &c) {
 }
 
 
-void Sort(container &c) {
-	for (int i = 0; i < c.n - 1; i++) {
+void Sort(container &c) 
+{
+	for (int i = 0; i < c.n - 1; i++) 
+	{
 		list* cur = c.cont;
-		for (int j = i + 1; j < c.n; j++) {
-			if (Compare(cur->shape, cur->next->shape)) {
+		for (int j = i + 1; j < c.n; j++) 
+		{
+			if (Compare(cur->shape, cur->next->shape)) 
+			{
 				shape *tmp = cur->shape;
 				cur->shape = cur->next->shape;
 				cur->next->shape = tmp;
@@ -83,14 +88,13 @@ void Sort(container &c) {
 	}
 }
 
-void OutSpheres(container &c, ofstream &ofst) {
+void OutSpheres(container &c, ofstream &ofst) 
+{
 	ofst << "Only spheres:" << endl;
-
 	list* cur = c.cont;
 	int s = 0;
 	while (cur != NULL && s < c.n)
 	{
-		
 		if (cur->shape->t == SPHERE)
 		{
 			ofst << s + 1 << " :  ";
@@ -98,10 +102,7 @@ void OutSpheres(container &c, ofstream &ofst) {
 			ofst << endl;
 			++s;
 		}
-		
-
 		cur = cur->next;
-		
 	}
 }
 

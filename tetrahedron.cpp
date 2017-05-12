@@ -3,7 +3,10 @@
 
 void In(tetrahedron &t, ifstream &ifst)
 {
+	ChckInFile(ifst);
 	ifst >> t.side;
+	ChckInValue(ifst);
+	ChckNegative(t.side);
 }
 
 
@@ -14,6 +17,6 @@ void Out(tetrahedron &t, ofstream &ofst)
 
 double Volume(tetrahedron *t)
 {
-	return (t->side * t->side *t->side * sqrt((double)2) / 12);
+	return (t->side * t->side * t->side * sqrt((double)2) / 12);
 }
 
