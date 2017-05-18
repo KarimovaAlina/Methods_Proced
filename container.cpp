@@ -61,3 +61,75 @@ void ClearContainer(container &c) {
 	c.n = 0;
 	c.cont = NULL;
 }
+
+void MultiMethod(container* l, ofstream &f)
+{
+	f << endl << "Multimethod:" << endl;
+	list *temp1 = l->cont;
+	list *temp2 = l->cont->next;
+	while (temp1->next != NULL)
+	{
+		temp2 = temp1->next;
+		while (temp2->next != NULL)
+		{
+			switch (temp1->shape->t)
+			{
+			case SPHERE:
+			{
+				switch (temp2->shape->t)
+				{
+				case SPHERE:
+				{
+					f << "Sphere and Sphere:" << endl;
+					break;
+				}
+				case PARALLELEPIPED:
+				{
+					f << "Sphere and Parallelepiped:" << endl;
+					break;
+				}
+				default:
+				{
+					f << "Unknown type" << endl;
+					break;
+				}
+				}
+				break;
+			}
+			case PARALLELEPIPED:
+			{
+				switch (temp2->shape->t)
+				{
+				case SPHERE:
+				{
+					f << "Box and Sphere:" << endl;
+					break;
+				}
+				case PARALLELEPIPED:
+				{
+					f << "Box and Parallelepiped:" << endl;
+					break;
+				}
+				default:
+				{
+					f << "Unknown type" << endl;
+					break;
+				}
+				}
+				break;
+			}
+			default:
+			{
+				f << "Unknown type" << endl;
+				break;
+			}
+			}
+			Out(temp1->shape, f);
+			Out(temp2->shape, f);
+			f << endl;
+			temp2 = temp2->next;
+		}
+		temp1 = temp1->next;
+	}
+
+}

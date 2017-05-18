@@ -30,5 +30,371 @@ Container contains 15 elements.
 
 15 :  It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 4
 
+
+Multimethod:
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 15.5
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 50, Destiny = 190.9
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 15.5
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 25, Destiny = 50.7
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 80, Destiny = 5.4
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 20, Destiny = 75.1
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 15.5
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 15.5
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 15.5
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 33, Destiny = 33
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 15.5
+It is sphere: radius = 54, Destiny = 45
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 50, Destiny = 190.9
+
+Box and Box:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 25, Destiny = 50.7
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 80, Destiny = 5.4
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 20, Destiny = 75.1
+
+Box and Box:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Box and Box:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Box and Box:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 33, Destiny = 33
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 44, Destiny = 44
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 45, Destiny = 54
+
+Box and Sphere:
+It is parallelepiped:  a = 10, b = 20, c = 30, Destiny = 100.1
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Box:
+It is sphere: radius = 50, Destiny = 190.9
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 25, Destiny = 50.7
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 80, Destiny = 5.4
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 20, Destiny = 75.1
+
+Sphere and Box:
+It is sphere: radius = 50, Destiny = 190.9
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Sphere and Box:
+It is sphere: radius = 50, Destiny = 190.9
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Sphere and Box:
+It is sphere: radius = 50, Destiny = 190.9
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 33, Destiny = 33
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 50, Destiny = 190.9
+It is sphere: radius = 54, Destiny = 45
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 25, Destiny = 50.7
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 80, Destiny = 5.4
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 20, Destiny = 75.1
+
+Box and Box:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Box and Box:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Box and Box:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 33, Destiny = 33
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 44, Destiny = 44
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 45, Destiny = 54
+
+Box and Sphere:
+It is parallelepiped:  a = 100, b = 200, c = 300, Destiny = 200.6
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 80, Destiny = 5.4
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 20, Destiny = 75.1
+
+Sphere and Box:
+It is sphere: radius = 25, Destiny = 50.7
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Sphere and Box:
+It is sphere: radius = 25, Destiny = 50.7
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Sphere and Box:
+It is sphere: radius = 25, Destiny = 50.7
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 33, Destiny = 33
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 25, Destiny = 50.7
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Sphere:
+It is sphere: radius = 80, Destiny = 5.4
+It is sphere: radius = 20, Destiny = 75.1
+
+Sphere and Box:
+It is sphere: radius = 80, Destiny = 5.4
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Sphere and Box:
+It is sphere: radius = 80, Destiny = 5.4
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Sphere and Box:
+It is sphere: radius = 80, Destiny = 5.4
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Sphere and Sphere:
+It is sphere: radius = 80, Destiny = 5.4
+It is sphere: radius = 33, Destiny = 33
+
+Sphere and Sphere:
+It is sphere: radius = 80, Destiny = 5.4
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 80, Destiny = 5.4
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 80, Destiny = 5.4
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 75.1
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 75.1
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Sphere and Box:
+It is sphere: radius = 20, Destiny = 75.1
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 75.1
+It is sphere: radius = 33, Destiny = 33
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 75.1
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 75.1
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 20, Destiny = 75.1
+It is sphere: radius = 54, Destiny = 45
+
+Box and Box:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+
+Box and Box:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Box and Sphere:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is sphere: radius = 33, Destiny = 33
+
+Box and Sphere:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is sphere: radius = 44, Destiny = 44
+
+Box and Sphere:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is sphere: radius = 45, Destiny = 54
+
+Box and Sphere:
+It is parallelepiped:  a = 1, b = 2, c = 3, Destiny = 10.9
+It is sphere: radius = 54, Destiny = 45
+
+Box and Box:
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+
+Box and Sphere:
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+It is sphere: radius = 33, Destiny = 33
+
+Box and Sphere:
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+It is sphere: radius = 44, Destiny = 44
+
+Box and Sphere:
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+It is sphere: radius = 45, Destiny = 54
+
+Box and Sphere:
+It is parallelepiped:  a = 5, b = 10, c = 15, Destiny = 25.11
+It is sphere: radius = 54, Destiny = 45
+
+Box and Sphere:
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+It is sphere: radius = 33, Destiny = 33
+
+Box and Sphere:
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+It is sphere: radius = 44, Destiny = 44
+
+Box and Sphere:
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+It is sphere: radius = 45, Destiny = 54
+
+Box and Sphere:
+It is parallelepiped:  a = 90, b = 100, c = 10, Destiny = 55.77
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Sphere:
+It is sphere: radius = 33, Destiny = 33
+It is sphere: radius = 44, Destiny = 44
+
+Sphere and Sphere:
+It is sphere: radius = 33, Destiny = 33
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 33, Destiny = 33
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Sphere:
+It is sphere: radius = 44, Destiny = 44
+It is sphere: radius = 45, Destiny = 54
+
+Sphere and Sphere:
+It is sphere: radius = 44, Destiny = 44
+It is sphere: radius = 54, Destiny = 45
+
+Sphere and Sphere:
+It is sphere: radius = 45, Destiny = 54
+It is sphere: radius = 54, Destiny = 45
+
 Empty container. 
 Container contains 0 elements.
