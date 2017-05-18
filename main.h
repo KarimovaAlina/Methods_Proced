@@ -22,7 +22,7 @@ using namespace std;
 void ClearContainer(container &c);
 void In(container &c, ifstream &ifst);
 void Out(container &c, ofstream &ofst);
-
+void MultiMethod(container* cont, ofstream &file);
 void Sort(container &c);
 
 void OutSpheres(container &c, ofstream &ofst);

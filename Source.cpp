@@ -32,6 +32,7 @@ int main(int argc, char* argv[])
 	Sort(c);
 	Out(c, fout);
 	OutSpheres(c, fout);
+	MultiMethod(&c, fout);
 	ClearContainer(c);
 	fout << "Empty container. " << endl;
 	Out(c, fout);

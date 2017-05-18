@@ -106,3 +106,113 @@ void OutSpheres(container &c, ofstream &ofst)
 	}
 }
 
+void MultiMethod(container* cont, ofstream &file)
+{
+	file << endl << "Multimethod:" << endl;
+	list *temp1 = new list;
+	temp1 = cont->cont;
+	list *temp2 = new list;
+	temp2 = cont->cont->next;
+	while (temp1->next != NULL)
+	{
+		while (temp2->next != NULL)
+		{
+			switch (temp1->shape->t)
+			{
+			case SPHERE:
+			{
+				switch (temp2->shape->t)
+				{
+				case SPHERE:
+				{
+					file << "Sphere and Sphere:" << endl;
+					break;
+				}
+				case PARALLELEPIPED:
+				{
+					file << "Sphere and Parallelepiped:" << endl;
+					break;
+				}
+				case TETRAHEDRON:
+				{
+					file << "Sphere and Tetrahedron:" << endl;
+					break;
+				}
+				default:
+				{
+					file << "Unknown type" << endl;
+					break;
+				}
+				}
+				break;
+			}
+			case PARALLELEPIPED:
+			{
+				switch (temp2->shape->t)
+				{
+				case SPHERE:
+				{
+					file << "Parallelepiped and Sphere:" << endl;
+					break;
+				}
+				case PARALLELEPIPED:
+				{
+					file << "Parallelepiped and Parallelepiped:" << endl;
+					break;
+				}
+				case TETRAHEDRON:
+				{
+					file << "Parallelepiped and Tetrahedron:" << endl;
+					break;
+				}
+				default:
+				{
+					file << "Unknown type" << endl;
+					break;
+				}
+				}
+				break;
+			}
+			case TETRAHEDRON:
+			{
+				switch (temp2->shape->t)
+				{
+				case SPHERE:
+				{
+					file << "Tetrahedron and Sphere:" << endl;
+					break;
+				}
+				case PARALLELEPIPED:
+				{
+					file << "Tetrahedron and Parallelepiped:" << endl;
+					break;
+				}
+				case TETRAHEDRON:
+				{
+					file << "Tetrahedron and Tetrahedron:" << endl;
+					break;
+				}
+				default:
+				{
+					file << "Unknown type" << endl;
+					break;
+				}
+				}
+				break;
+			}
+			default:
+			{
+				file << "Unknown type" << endl;
+				break;
+			}
+			}
+			Out(temp1->shape, file);
+			file << ", V = " << Volume(temp1->shape) << endl;
+			Out(temp2->shape, file);
+			file << ", V = " << Volume(temp2->shape) << endl << endl;;
+			temp2 = temp2->next;
+		}
+		temp1 = temp1->next;
+	}
+}
+
