@@ -2,8 +2,7 @@
 
 #include "shape_type.h"
 
-struct parallelepiped 
-{
+struct parallelepiped {
 	type t;
 	double destiny;
 

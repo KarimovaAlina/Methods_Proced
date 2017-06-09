@@ -2,8 +2,7 @@
 
 #include "shape_type.h"
 
-struct shape 
-{
+struct shape {
 	type t;
 	double destiny;
 

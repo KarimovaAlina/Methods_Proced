@@ -3,8 +3,7 @@
 #include "shape_type.h"
 
 
-struct tetrahedron 
-{
+struct tetrahedron {
 	type t;
 	double destiny;
 	

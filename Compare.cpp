@@ -1,12 +1,20 @@
-#include <stdio.h>
-#include "shape_atd.h"
+#include "main.h"
 
-double Volume(shape *s);
 
-bool Compare(shape *first, shape *second) 
-{
-	if (Volume(first) < Volume(second))
-		return 1;
+
+bool Compare(shape *first, shape *second, bool napr) {
+	if (napr)
+	{
+		if (Volume(first) < Volume(second))
+			return 1;
+		else
+			return 0;
+	}
 	else
-		return 0;
+	{
+		if (Volume(first) < Volume(second))
+			return 0;
+		else
+			return 1;
+	}
 }
